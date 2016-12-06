@@ -192,14 +192,28 @@ maximum(10,4);
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+var isEven = function(n){
+  if(n % 2 ===0){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+var isOdd = function(n){
+  if(n % 1 === 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
 
 /**
  * Returns a letter grade.
