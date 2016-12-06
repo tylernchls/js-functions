@@ -253,6 +253,15 @@ var percentage = score / total * 100;
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+var incrementReviews = function(restaurant){
+if(restaurant.hasOwnProperty("reviews")){
+  restaurant.reviews+=1;
+}
+else{
+  restaurant.reviews = 1;
+}
+return restaurant;
+ }
 
 
 /**
