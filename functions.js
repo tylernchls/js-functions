@@ -171,15 +171,21 @@ areEqual(5,5);
  * @param {number} y
  * @return {number} the smallest number
  */
-
-
+var minimum = function(x,y){
+  return Math.min(x,y);
+}
+minimum(2,4);
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the largest number
  */
+var maximum = function(x,y){
+  return Math.max(x,y);
+}
 
+maximum(10,4);
 
 /**
  * Returns true if `n` is even.
