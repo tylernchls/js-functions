@@ -29,16 +29,18 @@ var decrease = function(n){
 }
 decrease(4);
 
-var add = function(x,y){
-  return x + y;
-}
-add(5,4);
+
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
+
+ var add = function(x,y){
+  return x + y;
+}
+add(5,4);
 
 
 /**
@@ -47,8 +49,10 @@ add(5,4);
  * @param {number} y
  * @return {number} the difference
  */
-
-
+var subtract = function(x,y){
+  return x - y;
+}
+subtract(5,4);
 /**
  * Multiplies two numbers.
  * @param {number} x
