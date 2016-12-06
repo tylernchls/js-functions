@@ -69,8 +69,10 @@ multiply(5,5);
  * @param {number} y
  * @return {number} the quotient
  */
-
-
+var divide = function(x,y){
+  return x / y;
+}
+divide(20,5);
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
