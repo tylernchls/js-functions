@@ -28,6 +28,11 @@ var decrease = function(n){
   return n -=1;
 }
 decrease(4);
+
+var add = function(x,y){
+  return x + y;
+}
+add(5,4);
 /**
  * Adds two numbers.
  * @param {number} x
