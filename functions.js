@@ -24,8 +24,10 @@ increase(2);
  * @param {number} n
  * @return {number}
  */
-
-
+var decrease = function(n){
+  return n -=1;
+}
+decrease(4);
 /**
  * Adds two numbers.
  * @param {number} x
