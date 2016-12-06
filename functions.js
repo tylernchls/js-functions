@@ -59,8 +59,10 @@ subtract(5,4);
  * @param {number} y
  * @return {number} the product
  */
-
-
+var multiply = function(x,y){
+  return x * y;
+}
+multiply(5,5);
 /**
  * Divides the first number by the second.
  * @param {number} x
