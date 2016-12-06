@@ -92,7 +92,7 @@ square(5);
  */
 var calculate = function(operation, x, y){
   var result;
-  console.log("hello");
+
   switch(operation) {
     case "add":
     result = x + y;
@@ -115,7 +115,6 @@ var calculate = function(operation, x, y){
    }
 }
 
-calculate("add", 5, 5);
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -226,6 +225,25 @@ var isOdd = function(n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+var letterGrade = function(score, total){
+var percentage = score / total * 100;
+  if(percentage <= 100 && percentage >= 90){
+    return "A";
+  }
+ else if(percentage <= 89 && percentage >= 80){
+  return "B";
+ }
+ else if(percentage <= 79 && percentage >= 70){
+  return "C";
+ }
+ else if(percentage < 70 && percentage >= 60){
+  return "D";
+ }
+ else {
+  return "F";
+ }
+  }
+
 
 
 /**
