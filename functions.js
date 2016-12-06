@@ -270,7 +270,9 @@ return restaurant;
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
+var combine = function(word1,word2){
+  return word1 + " " + word2;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -279,4 +281,11 @@ return restaurant;
  * @param {number} radius
  * @return {object} circle
  */
-
+var createCircle = function(radius,circle){
+  var circle = {
+    area: Math.PI * radius *radius,
+    circumference: 2 * Math.PI * radius
+};
+return circle;
+}
+createCircle(4)
