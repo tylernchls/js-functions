@@ -78,8 +78,10 @@ divide(20,5);
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
-
+var square = function(x) {
+  return x * x;
+}
+square(5);
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -88,7 +90,32 @@ divide(20,5);
  * @param {number} y
  * @return {number} the result
  */
+var calculate = function(operation, x, y){
+  var result;
+  console.log("hello");
+  switch(operation) {
+    case "add":
+    result = x + y;
+      console.log(x + " + " + y + " = " + result);
+      return x + y;
+    case "subtract":
+    result = x - y;
+      console.log(x + " - " + y + " = " + result);
+      return x - y;
+    case "multiply":
+    result = x * y;
+      console.log(x + " * " + y + " = " + result);
+      return x * y;
+    case "divide":
+    result = x / y;
+      console.log(x + " / " + y + " = " + result);
+      return x / y;
+    default:
+      return null;
+   }
+}
 
+calculate("add", 5, 5);
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -97,6 +124,15 @@ divide(20,5);
  * @return {boolean} `a` is larger than `b`
  */
 
+var isGreaterThan = function(a,b){
+  if(a > b){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+isGreaterThan(6,2);
 
 /**
  * Returns true if `a` is less than `b`.
@@ -104,7 +140,15 @@ divide(20,5);
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+var isLessThan = function(a,b){
+  if(a < b){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+isLessThan(5,10);
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -112,8 +156,15 @@ divide(20,5);
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
-
+var areEqual = function(a,b){
+  if(a === b){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+areEqual(5,5);
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
