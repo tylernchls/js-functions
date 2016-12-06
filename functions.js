@@ -14,7 +14,11 @@ numberToString(5);
  * @return {number}
  */
 
+var increase = function(n){
 
+  return n+=1;
+}
+increase(2);
 /**
  * Subtracts one from a given number.
  * @param {number} n
